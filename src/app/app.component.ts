@@ -8,5 +8,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-tut';
+  myname = 'Deepak'; //this is a class property
+  // const myname = 'Deepak'; //this is a variable which is not allowed inside class but we can a function inside a class and inside that we can have variables
+  fun(params:any) {
+    const myage=78;
+  }
+
 }
+
+// tsconfig.json and tsconfig.app.json //typescript setting for app folder and whole project
+// angular.json // tells u how your project will start what will be the first component render etc
+//index.html , main.ts, //first file to load-> all mentioned in angular.json
