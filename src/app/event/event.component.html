@@ -1,0 +1,13 @@
+<div style="background-color: bisque; margin: 8px; padding: 8px;">
+<p>Events</p>
+<div style=" background-color: cadetblue; padding: 2px;" (mouseenter)="myFunction($event)">
+    Mouse enter event
+</div>
+<br>
+<div style=" background-color: cadetblue; padding: 2px;" (mouseleave)="myFunction($event)">
+    Mouse leave event
+</div>
+<br>
+<input type="text" (input)="myFunctionForInputEvent($event)" placeholder="input event">
+<input type="text" (focus)="myFunctionForInputEvent($event)" placeholder="focus event">
+</div>
