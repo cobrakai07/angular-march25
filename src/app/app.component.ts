@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ComponentdemoComponent } from './componentdemo/componentdemo.component';
+import { ButtonClickComponent } from './button-click/button-click.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ComponentdemoComponent],// first import the component into the component where u want to use it
+  imports: [RouterOutlet,ComponentdemoComponent, ButtonClickComponent],// first import the component into the component where u want to use it
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
