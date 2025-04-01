@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class ForLoopComponent {
   users=[{id:1,name:"Deepak",age:22},{id:2,name:"Virat",age:24},{id:3,name:"UV",age:20}];
+  // users=[]
 }
