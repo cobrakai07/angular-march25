@@ -9,11 +9,13 @@ import { ConditionalStatementComponent } from './conditional-statement/condition
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { SignalComponent } from './signal/signal.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { TodoComponent } from './todo/todo.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet,ComponentdemoComponent, ButtonClickComponent, CounterComponent,
-     EventComponent, SetInputGetInputComponent, ConditionalStatementComponent, ForLoopComponent, SignalComponent, TwoWayBindingComponent],// first import the component into the component where u want to use it
+     EventComponent, SetInputGetInputComponent, ConditionalStatementComponent,
+      ForLoopComponent, SignalComponent, TwoWayBindingComponent, TodoComponent],// first import the component into the component where u want to use it
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
