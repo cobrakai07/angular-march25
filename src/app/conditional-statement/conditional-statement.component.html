@@ -1,0 +1,53 @@
+<div>
+    <div style="margin: 5px; border: 2px black solid;">
+        <p>If statement</p>
+    @if(display){
+        <div style="padding: 2px; background-color: rgb(162, 162, 235);">
+            Toggle this Div
+        </div>
+    }
+    <button (click)="toggler()">Toggle div</button>
+    </div>
+
+    <div style="margin: 5px; border: 2px black solid;">
+        <p>If else</p>
+
+    @if(color=="red"){
+        <div style="padding: 2px; background-color: rgb(209, 64, 64);">
+            View Red Color
+        </div>
+    }@else{
+        <div style="padding: 2px; background-color: rgb(59, 207, 79);">
+            View Green Color
+        </div>
+    }
+    <button (click)="toggleColor()">{{color=="red"?'Show Green Color':'Show Red Color'}}</button>
+    </div>
+
+    <div style="margin: 5px; border: 2px black solid;">
+        <p>switch statement</p>
+    @switch(switchColor){
+
+        @case("cyan"){
+            <div style="padding: 2px; background-color: rgb(79, 170, 231);">
+                Switch color
+            </div>
+        }
+        @case("red"){
+            <div style="padding: 2px; background-color: rgb(228, 5, 5);">
+                Switch color
+            </div>
+        }
+        @default{
+            <div style="padding: 2px; background-color: rgb(226, 211, 211);">
+                Default color
+            </div>
+        }
+        
+    }
+    <button (click)="switchColorFunction('cyan')">cyan</button>
+    <button (click)="switchColorFunction('red')">red</button>
+    <button (click)="switchColorFunction('jkcbjksbajk')">Default</button>
+    </div>
+    
+</div>

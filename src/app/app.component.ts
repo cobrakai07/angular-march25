@@ -5,10 +5,11 @@ import { ButtonClickComponent } from './button-click/button-click.component';
 import { CounterComponent } from './counter/counter.component';
 import { EventComponent } from './event/event.component';
 import { SetInputGetInputComponent } from './set-input-get-input/set-input-get-input.component';
+import { ConditionalStatementComponent } from './conditional-statement/conditional-statement.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ComponentdemoComponent, ButtonClickComponent, CounterComponent, EventComponent, SetInputGetInputComponent],// first import the component into the component where u want to use it
+  imports: [RouterOutlet,ComponentdemoComponent, ButtonClickComponent, CounterComponent, EventComponent, SetInputGetInputComponent, ConditionalStatementComponent],// first import the component into the component where u want to use it
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
