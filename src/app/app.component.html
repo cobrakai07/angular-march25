@@ -16,3 +16,19 @@
 <app-signal/>
 <app-two-way-binding/>
 <app-todo/>
+
+<div style="margin: 10px; background-color: rgb(245, 211, 98); padding: 10px;">
+    <ul>
+        <li>
+            <a routerLinkActive="myActiveIconCSS" routerLink="login">Go To Login Page</a>
+        </li>
+        <li>
+            <a routerLinkActive="myActiveIconCSS" [routerLinkActiveOptions]="{exact:true}" routerLink="home">Go To Home Page</a>
+        </li>
+        <li>
+            <a routerLinkActive="myActiveIconCSS" routerLink="about">Go To About Page</a>
+        </li>
+    </ul>
+    
+    <router-outlet/>
+</div>

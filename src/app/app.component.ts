@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ComponentdemoComponent } from './componentdemo/componentdemo.component';
 import { ButtonClickComponent } from './button-click/button-click.component';
 import { CounterComponent } from './counter/counter.component';
@@ -15,7 +15,8 @@ import { TodoComponent } from './todo/todo.component';
   selector: 'app-root',
   imports: [RouterOutlet,ComponentdemoComponent, ButtonClickComponent, CounterComponent,
      EventComponent, SetInputGetInputComponent, ConditionalStatementComponent,
-      ForLoopComponent, SignalComponent, TwoWayBindingComponent, TodoComponent],// first import the component into the component where u want to use it
+      ForLoopComponent, SignalComponent, TwoWayBindingComponent, TodoComponent,
+     RouterLink, RouterOutlet, RouterLinkActive],// first import the component into the component where u want to use it
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
